@@ -1,0 +1,19 @@
+// .blurNav {
+//   position: fixed;
+//   width: 100vw;
+//   position: fixed;
+//   background: #faebd73d;
+//   height: 5rem;
+//   filter: blur(18px);
+// }
+
+.anchorContainer {
+  padding: 1.5rem 2.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+  opacity: 0.7;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+// background: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
+body {
+  background: rgb(122, 122, 219); /* couleur de départ */
+  background: -moz-linear-gradient(
+    315deg,
+    rgba(122, 122, 219, 1) 0%,
+    rgba(23, 14, 19, 1) 74%
+  );
+  background: -webkit-linear-gradient(
+    315deg,
+    rgba(122, 122, 219, 1) 0%,
+    rgba(23, 14, 19, 1) 74%
+  );
+  background: linear-gradient(
+    315deg,
+    rgba(122, 122, 219, 1) 0%,
+    rgba(23, 14, 19, 1) 74%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7a7adb",endColorstr="#170e13",GradientType=1);
+}
+
+//RESET CSS
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+.mainContainer {
+  --sb-track-color: #ffffff;
+  --sb-thumb-color: #b5b5b5;
+  --sb-size: 9px;
+}
+
+.mainContainer ::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.mainContainer ::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  /* border-radius: 9px; */
+}
+
+.mainContainer ::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 9px;
+}
+
+.ant-picker {
+  padding: 0;
+  margin-left: 7px;
+}
+
+.tagDashboard {
+  margin: 0 !important;
+  color: black !important;
+}
+
+.tagDetails {
+  font-size: 15px;
+}
+/* 
+.ant-picker-input > input {
+  text-align: center !important;
+  width: 73% !important;
+} */
+
+@supports not selector(::-webkit-scrollbar) {
+  .mainContainer {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}

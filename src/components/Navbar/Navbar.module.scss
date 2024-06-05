@@ -1,0 +1,43 @@
+.holderNav {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  opacity: 0.7;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.navList li {
+  font-style: none;
+  list-style: none;
+  margin: 0 2.5rem;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+}
+
+.navList li::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #6cb0f6;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s width;
+}
+
+.navList li:hover::after {
+  width: 50%;
+  opacity: 1;
+  transition: 0.3s width;
+}

@@ -1,0 +1,47 @@
+@import './var.scss';
+
+.homeSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $whitePrimary;
+  height: 100vh;
+  width: 100%;
+}
+
+.blueText {
+  color: $bluePrimary;
+  font-weight: bold;
+}
+
+.textContainer {
+  position: relative;
+  text-align: center;
+  font-family: var(--ff-titleMenu);
+}
+.textContainer h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.textContainer h2 {
+  font-size: 2rem;
+  margin: 2rem;
+  font-weight: 200;
+}
+
+#acceuilContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageInformation {
+  width: 20%;
+}
+
+.imageInformation img {
+  border-radius: 50%;
+  border: solid 2px $bluePrimary;
+}
