@@ -1,5 +1,6 @@
 import styles from './Home.module.scss';
 import picture from '../../assets/Profil.jpg';
+import ContactButton from '../ContactButton/ContactButton';
 
 const Home = () => {
   return (
@@ -9,12 +10,7 @@ const Home = () => {
         <h2>
           Dévoloppeur Web <span className={styles.blueText}>&#38;</span> Mobile
         </h2>
-        <div className={styles.flip}>
-          {/* <a>
-              <div class="black">Constactez-moi</div>
-              <div className={styles.white}>Constactez-moi</div>
-            </a> */}
-        </div>
+        <ContactButton />
       </div>
 
       <div className={styles.imageInformation}>

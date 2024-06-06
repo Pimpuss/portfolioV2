@@ -5,8 +5,14 @@ import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Experiences from './components/Experiences/Experiences';
 import Contact from './components/Contact/Contact';
+import { useEffect } from 'react';
 
 const App = () => {
+  useEffect(() => {
+    if (!window.location.hash) {
+      window.location.hash = '#home';
+    }
+  }, []);
   return (
     <>
       <ConfigProvider
