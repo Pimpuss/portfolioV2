@@ -1,6 +1,6 @@
 @import './var.scss';
 
-$speed: 0.7s;
+$speed: 0.9s;
 
 .btnFlip {
   opacity: 1;
@@ -51,7 +51,7 @@ $speed: 0.7s;
     line-height: 40px;
     transition: $speed;
     position: relative;
-    background: #6cb0f6;
+    background: $bluePrimary;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
   }

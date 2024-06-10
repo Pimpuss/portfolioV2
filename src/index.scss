@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
 
 // background: linear-gradient(315deg, #7a7adb 0%, #170e13 74%);
@@ -61,10 +64,6 @@ ol[role='list'] {
   list-style: none;
 }
 
-// html {
-//   scrollbar-width: thin;
-// }
-
 html {
   --sb-track-color: #232e33;
   --sb-thumb-color: #656565;
@@ -73,6 +72,7 @@ html {
 
 html::-webkit-scrollbar {
   width: var(--sb-size);
+  display: none;
 }
 
 html::-webkit-scrollbar-track {
